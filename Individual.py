@@ -3,11 +3,16 @@
 
 
 def string():
-    def sophia(a):
-        a = list(map(int, input("Напишите строки через запятую: ").split()))
-        print("<ol>\n<li>строка {count}</li>\n<li>строка {count}</li>\n</ol>")
+    def sophia():
+        a = list(map(int, input("Напишите строки через пробел: ").split()))
+        print("<ol>\n")
+
+        for i in a:
+            print(f"<li> строка {i}</li>\n")
+
+        print("</ol>")
     return sophia()
 
 
 if __name__ == '__main__':
-    strong = string(2)
+    print(string())
